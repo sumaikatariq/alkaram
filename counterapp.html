@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+*{
+    background-color: aqua;
+    
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+
+  
+</style>
+<body>
+    <div id="container">
+    <h1 id="counterapp">0</h1>
+    
+    <button id="inc" onclick="inc()">+</button>
+    <button id="dec" onclick="dec()">-</button>
+    <button id="reset" onclick="reset()">reset</button>
+   
+    <script>
+        let count =0
+        function inc(){
+            count++
+            document.getElementById("counterapp").innerHTML=count
+        }
+        function dec(){
+           if(count> 0){
+            count--;
+           }
+           document.getElementById("counterapp").innerHTML=count
+            
+        }
+         function reset(){
+            count=0
+            document.getElementById("counterapp").innerHTML=count
+            
+        }
+        
+        
+        
+    </script>
+
+</body>
+</html>
